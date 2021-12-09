@@ -1,0 +1,190 @@
+[
+  {
+    "description": "I want to Login ",
+    "keyword": "Feature",
+    "name": "User Login",
+    "line": 1,
+    "id": "user-login",
+    "tags": [],
+    "uri": "userLogin.feature",
+    "elements": [
+      {
+        "id": "user-login;the-user-is-now-logged-in",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "The user is now logged in",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I am on the \"user-login\" page",
+            "result": {
+              "status": "passed",
+              "duration": 130000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I enter \"George312\"",
+            "result": {
+              "status": "passed",
+              "duration": 240000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I enter \"hsj%2*sc5$\"",
+            "result": {
+              "status": "passed",
+              "duration": 250000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I Click the \"Submit\" button",
+            "result": {
+              "status": "passed",
+              "duration": 2095000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "I should see written in a window user \"George312 is now logged in!\"",
+            "result": {
+              "status": "failed",
+              "duration": 4016000000,
+              "error_message": "AssertionError: Timed out retrying after 4000ms: Expected to find content: 'user \"George312 is now logged in!\"' within the element: [ <p.prompt>, 1 more... ] but never did.\n    at Context.eval (http://localhost:8080/__cypress/tests?p=tests\\e2e\\specs\\userLogin.feature:59:62)\n    at Context.resolveAndRunStepDefinition (http://localhost:8080/__cypress/tests?p=tests\\e2e\\specs\\userLogin.feature:10340:29)\n    at Context.eval (http://localhost:8080/__cypress/tests?p=tests\\e2e\\specs\\userLogin.feature:9661:35)"
+            }
+          }
+        ]
+      },
+      {
+        "id": "user-login;the-user-provided-wrong-credentials",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "The user provided wrong credentials",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 16,
+            "name": "I am on the \"user-login\" page",
+            "result": {
+              "status": "passed",
+              "duration": 412000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "I enter \"George312\"",
+            "result": {
+              "status": "passed",
+              "duration": 242000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "I enter \"hsj%2*sc5$3\"",
+            "result": {
+              "status": "passed",
+              "duration": 265000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "I Click the \"Submit\" button",
+            "result": {
+              "status": "passed",
+              "duration": 2087000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "I should see written in a window user \"Login Failed! wrong password\"",
+            "result": {
+              "status": "passed",
+              "duration": 18000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "user-login;the-user-is-not-registered",
+        "keyword": "Scenario",
+        "line": 23,
+        "name": "The user is not registered",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 25,
+            "name": "I am on the \"user-login\" page",
+            "result": {
+              "status": "passed",
+              "duration": 98000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 26,
+            "name": "I enter \"Mark123\"",
+            "result": {
+              "status": "undefined"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 27,
+            "name": "I enter \"hsj%2*sc5$\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 28,
+            "name": "I Click the \"Submit\" button",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 29,
+            "name": "I should see written in a window user \"Login Failed! User is not registered\"",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
