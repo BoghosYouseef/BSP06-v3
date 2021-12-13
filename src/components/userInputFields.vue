@@ -15,7 +15,7 @@ export default {
         validatePassword: function(password){
             // console.log(String(password.length))
             if(password === null){
-                var password = document.getElementById('password').value
+                password = document.getElementById('password').value
 
             }
             if(password.length < 10){

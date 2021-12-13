@@ -49,9 +49,6 @@ export default {
                     this.shownMessage = this.messageSuccess
                     this.isShown = true
                     return true
-
-                   
-                 
                } else{
                     console.log("I AM IN THE ELSE IF CLAUSE")
                     this.shownMessage = this.messageWrongPassword
@@ -72,9 +69,10 @@ export default {
                                         ]
                                     }
                             })
-                .then(response => (this.apiResponse = response.data.isAuthenticated1,
+                .then(response => (this.apiResponse = response.data.isAuthenticated,
                 this.chooseMessageToBeShown(this.apiResponse),
-                console.log(response.data.isAuthenticated1))
+                console.log(response.data.isAuthenticated),
+                console.log(this.apiResponse))
                 )
 
         },
